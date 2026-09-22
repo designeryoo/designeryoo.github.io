@@ -1,71 +1,78 @@
 <!doctype html>
 <html lang="ko">
 <head>
-  <meta charset="UTF-8">
+  <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="theme-color" content="#f2f2f2">
+  <meta name="theme-color" content="#f6f5f1">
   <title>제이스튜디오 | 링크 모음</title>
   <style>
     * { box-sizing: border-box; }
-    body { margin: 0; background: #f2f2f2; color: #171717; font-family: "Malgun Gothic", "Apple SD Gothic Neo", sans-serif; -webkit-font-smoothing: antialiased; }
-    body { min-height: 100vh; min-height: 100svh; display: flex; align-items: center; }
-    main { width: min(360px, calc(100% - 40px)); margin: 0 auto; padding: 32px 0; }
-    header { text-align: center; margin-bottom: 30px; }
-    /* Hide the image's blank margins so the visible composition is centered. */
-    .logo-frame { width: min(120px, 50%); aspect-ratio: 1563 / 390; margin: 0 auto; position: relative; overflow: hidden; mix-blend-mode: multiply; }
-    .logo { display: block; width: 100%; height: auto; position: absolute; top: 0; transform: translateY(-38.8%); }
-    .subtitle { margin: 14px 0 0; color: #777; font-size: 20px; font-weight: 300; }
-    nav { display: grid; gap: 10px; width: 83.333333%; margin-inline: auto; }
-    .link { display: flex; align-items: center; gap: 13px; min-height: 44px; padding: 12px 17px; border-radius: 11px; background: #fff; color: inherit; text-decoration: none; font-size: 12px; line-height: 1.5; transition: transform .18s, box-shadow .18s; }
-    .link:hover { transform: translateY(-2px); box-shadow: 0 6px 22px #00000008; }
-    .link:focus-visible { outline: 2px solid #777; outline-offset: 5px; }
-    svg { width: 16px; height: 16px; flex-shrink: 0; fill: none; stroke: #707070; stroke-width: 1.7; stroke-linecap: round; stroke-linejoin: round; }
-    footer { margin-top: 42px; text-align: center; font-size: 9px; color: #aaa; }
-    dialog { width: min(360px, calc(100% - 40px)); padding: 28px; border: 0; border-radius: 20px; color: #222; line-height: 1.7; }
-    dialog::backdrop { background: #0005; }
-    dialog p { margin: 0 0 20px; }
-    dialog button { display: block; margin-left: auto; background: #222; color: white; padding: 10px 22px; border: 0; border-radius: 10px; cursor: pointer; font: inherit; }
-    @media (max-width: 540px) { .logo-frame { width: min(210px, 50%); } .link { min-height: 64px; padding: 16px 22px; gap: 18px; font-size: 16px; } svg { width: 24px; height: 24px; } nav { gap: 14px; } footer { margin-top: 44px; font-size: 12px; } }
-    @media (prefers-reduced-motion: reduce) { .link { transition: none; } }
+    body {
+      min-height: 100vh;
+      min-height: 100svh;
+      display: flex;
+      align-items: center;
+      margin: 0;
+      background: #f6f5f1;
+      color: #222;
+      font-family: "Malgun Gothic", "Apple SD Gothic Neo", sans-serif;
+      -webkit-font-smoothing: antialiased;
+    }
+    main {
+      position: relative;
+      width: min(360px, 100%);
+      min-height: 650px;
+      margin: auto;
+      padding: 150px 34px 70px;
+    }
+    header { margin-bottom: 40px; }
+    .logo-frame {
+      position: relative;
+      display: block;
+      width: 148px;
+      aspect-ratio: 1563 / 390;
+      overflow: hidden;
+      mix-blend-mode: multiply;
+    }
+    .logo {
+      position: absolute;
+      top: 0;
+      display: block;
+      width: 100%;
+      height: auto;
+      transform: translateY(-38.8%);
+    }
+    nav { border-bottom: 1px solid #b8b8b2; }
+    .link {
+      display: flex;
+      align-items: center;
+      min-height: 68px;
+      border-top: 1px solid #b8b8b2;
+      color: inherit;
+      text-decoration: none;
+      font-size: 15px;
+    }
+    .number { width: 33px; flex: none; color: #92928d; font-family: Georgia, serif; font-size: 12px; }
+    .label { flex: 1; }
+    .arrow { color: #6e6e69; font-size: 19px; line-height: 1; }
+    .link:hover .label, .link:hover .arrow { color: #000; }
+    .link:focus-visible { outline: 2px solid #6e6e69; outline-offset: 3px; }
+    footer { position: absolute; bottom: 31px; left: 34px; color: #999; font-size: 10px; }
+    @media (max-height: 650px) {
+      main { min-height: 620px; padding-top: 120px; }
+    }
   </style>
 </head>
 <body>
   <main>
-    <header><div class="logo-frame"><img class="logo" src="j-studio-logo.jpg" alt="J.STUDIO — INTERIOR &amp; ARCHITECTURE" width="1563" height="1563"></div></header>
-    <nav aria-label="SNS 및 연락처" id="links"></nav>
-    <footer id="copyright"></footer>
+    <header><span class="logo-frame"><img class="logo" src="j-studio-logo.jpg" alt="J.STUDIO — INTERIOR &amp; ARCHITECTURE" width="1563" height="1563"></span></header>
+    <nav aria-label="SNS 및 연락처">
+      <a class="link" href="https://www.instagram.com/j.studio_____/" target="_blank" rel="noopener noreferrer"><span class="number">01</span><span class="label">인스타그램</span><span class="arrow" aria-hidden="true">↗</span></a>
+      <a class="link" href="https://www.threads.com/@j.studio_____" target="_blank" rel="noopener noreferrer"><span class="number">02</span><span class="label">스레드</span><span class="arrow" aria-hidden="true">↗</span></a>
+      <a class="link" href="https://open.kakao.com/o/sZuA4LLg" target="_blank" rel="noopener noreferrer"><span class="number">03</span><span class="label">카카오톡 오픈채팅</span><span class="arrow" aria-hidden="true">↗</span></a>
+    </nav>
+    <footer>© <span id="year">2026</span> J.STUDIO</footer>
   </main>
-  <dialog id="notice"><p>아직 연결할 주소를 준비하고 있어요.</p><form method="dialog"><button>닫기</button></form></dialog>
-  <script>
-    // 이름, 소개, 각 버튼의 url을 수정하면 바로 사용할 수 있습니다.
-    // url 예시: 'https://www.instagram.com/계정이름/'
-    const profile = { name: '제이스튜디오', subtitle: 'J STUDIO' };
-    const links = [
-      { label: '인스타그램', icon: 'instagram', url: 'https://www.instagram.com/j.studio_____/' },
-      { label: '스레드', icon: 'threads', url: 'https://www.threads.com/@j.studio_____' },
-      { label: '카카오톡 오픈채팅', icon: 'chat', url: 'https://open.kakao.com/o/sZuA4LLg' }
-    ];
-    const icons = {
-      instagram: '<rect x="3" y="3" width="22" height="22" rx="6"/><circle cx="14" cy="14" r="5"/><circle cx="21" cy="7" r=".8"/>',
-      blog: '<path d="m5 20-1 5 5-1L24 9a3 3 0 0 0-4-4L5 20Z M18 7l4 4 M13 25h12"/>',
-      threads: '<path d="M22 8C20 2 9 1 5 8c-4 7-1 18 8 18 7 0 12-6 9-11-2-4-10-6-12-1-2 4 2 8 6 5 4-4 1-11-3-10 M22 23l3-3"/>',
-      work: '<rect x="2" y="8" width="24" height="17" rx="2"/><path d="M9 8V5a2 2 0 0 1 2-2h6a2 2 0 0 1 2 2v3"/>',
-      chat: '<path d="M26 13c0 6-6 10-12 10l-5-1-5 3 1-6c-2-2-3-4-3-6C2 7 7 3 14 3s12 4 12 10Z"/>'
-    };
-    document.title = profile.name + ' | 링크 모음';
-    document.getElementById('copyright').textContent = '© ' + new Date().getFullYear() + ' ' + profile.name;
-    for (const item of links) {
-      const a = document.createElement('a');
-      a.className = 'link';
-      a.href = item.url || '#';
-      if (item.url) { a.target = '_blank'; a.rel = 'noopener noreferrer'; }
-      else { a.addEventListener('click', e => { e.preventDefault(); document.getElementById('notice').showModal(); }); }
-      a.innerHTML = '<svg viewBox="0 0 28 28" aria-hidden="true">' + icons[item.icon] + '</svg>';
-      const label = document.createElement('span');
-      label.textContent = item.label;
-      a.append(label);
-      document.getElementById('links').append(a);
-    }
-  </script>
+  <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
 </body>
 </html>
